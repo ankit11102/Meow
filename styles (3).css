@@ -1,0 +1,98 @@
+body {
+    background-image: url('cat-background.jpg'); /* Add a cute cat-themed background image */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cat-image {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff69b4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#noButton {
+    background-color: #ffcccc;
+}
+
+#yesButton {
+    background-color: #ccffcc;
+}
+
+#yesButton:active {
+    background-color: #99ff99;
+}
+
+#noButton:active {
+    background-color: #ff9999;
+}
+
+.hidden {
+    display: none;
+}
+
+#response {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ff69b4;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
